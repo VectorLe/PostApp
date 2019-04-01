@@ -1,0 +1,3 @@
+# PostApp
+`mongod`
+`npm install`
