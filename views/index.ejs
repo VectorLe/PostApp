@@ -1,0 +1,16 @@
+<% include ./partials/header %>
+ 
+<div class="ui main container">
+    <% posts.forEach(function(post){%>
+    <a href="/posts/<%= post.id %>">
+        <div id="post" class="ui container posts segment">
+            <h3><strong><%= post.title %></strong></h3>
+            <img style="height: 300px; width: 340px;"src="<%= post.image %>">
+            <p><%= post.body.substring(0, 150) %>...</p>
+            <span><%= post.created.toDateString() %></span>
+        </div>
+    </a>
+    <% }); %>
+</div>
+
+<% include ./partials/footer %>
