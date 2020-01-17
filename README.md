@@ -1,4 +1,4 @@
-# PostApp
+# Blog App
 
 ## Built with
 * Mongoose.js (MongoDB): Database
